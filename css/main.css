@@ -7,7 +7,6 @@
 body {
   margin: 0;
   font-family: 'Poppins';
-  /*background-color: #bbd8e7;*/
   background-image: url("./../image/bg/image3.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -17,12 +16,9 @@ body {
 
 .header {
   padding-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   background-color: #fff;
-  /*background-image: url("./../image/bg/image1.jpg");*/
-  /*background-size: 100% 100%;*/
   padding: 5px 0;
-  /*background-repeat: no-repeat;*/
   border-radius: 20px;
 }
 
@@ -35,12 +31,19 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   position: relative;
   object-fit: contain;
-  width: 100%;
-  height: 100%;
+  width: 5rem;
+  height: 5rem;
 
+}
+
+.shop_logo .logo img {
+  max-width: 100%;
+  /* Ограничиваем ширину изображения до ширины родительского элемента */
+  height: auto;
+  /* Сохраняем пропорции изображения */
 }
 
 .row {
@@ -127,4 +130,23 @@ body {
   height: 20px;
   background-image: url('/image/icons/letter.jpg');
   background-size: contain;
+}
+
+.categories-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.list img {
+  max-width: 100%;
+  /* Ограничиваем ширину изображения до ширины родительского элемента */
+  height: auto;
+  /* Сохраняем пропорции изображения */
 }
