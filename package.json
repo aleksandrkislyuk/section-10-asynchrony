@@ -1,0 +1,19 @@
+{
+  "name": "home-work-module10",
+  "version": "1.0.0",
+  "description": "дз-к-модулю10",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksandrkislyuk/section-10-asynchrony.git"
+  },
+  "author": "Alex Kislyuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleksandrkislyuk/section-10-asynchrony/issues"
+  },
+  "homepage": "https://github.com/aleksandrkislyuk/section-10-asynchrony#readme"
+}
