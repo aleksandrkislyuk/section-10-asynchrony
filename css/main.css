@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+/*BASE */
+
 body {
   margin: 0;
   font-family: 'Poppins';
@@ -11,13 +13,22 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   color: #000;
-  height: 850px;
+  height: 1000px;
 }
+
+h1 {
+ text-align: center;
+ color: #f8065f;
+ font-weight: 1000;
+ font-style: italic;
+}
+
+/*HEADER*/
 
 .header {
   padding-top: 30px;
   margin-bottom: 0px;
-  background-color: #fff;
+  background-color: #b8ddfb;
   padding: 5px 0;
   border-radius: 20px;
 }
@@ -36,7 +47,10 @@ body {
   object-fit: contain;
   width: 5rem;
   height: 5rem;
+}
 
+.shop_logo {
+  margin: 0px;
 }
 
 .shop_logo .logo img {
@@ -135,6 +149,7 @@ body {
 .categories-menu {
   display: flex;
   justify-content: center;
+  font-weight: 700;
 }
 
 .list {
@@ -142,6 +157,7 @@ body {
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
+
 }
 
 .list img {
@@ -149,4 +165,172 @@ body {
   /* Ограничиваем ширину изображения до ширины родительского элемента */
   height: auto;
   /* Сохраняем пропорции изображения */
+}
+
+.list .product {
+  position: relative;
+  /* Родительский элемент с относительным позиционированием */
+  display: inline-block;
+  /* Чтобы элемент занимал ровно столько места, сколько нужно */
+}
+
+.image {
+  display: block;
+  /* Для корректной работы отображения изображения */
+  width: 100%;
+  /* Ширина изображения может быть настроена в зависимости от требований */
+  height: auto;
+  /* Высота автоматически подстроится под ширину */
+}
+
+.typography {
+  position: absolute;
+  /* Абсолютное позиционирование текста */
+  top: 0%;
+  /* Размещаем текст посередине по вертикали */
+  left: 35%;
+  /* Размещаем текст посередине по горизонтали */
+  /*transform: translate(-50%, -50%); /* Сдвигаем текст так, чтобы он оказался точно по центру */
+  color: rgb(80, 56, 191);
+  /* Цвет текста, можно изменить по необходимости */
+  font-size: 20px;
+  /* Размер шрифта, также можно настроить по желанию */
+  margin: 0;
+  /* Убираем стандартные отступы у параграфа */
+  z-index: 1;
+  /* Обеспечиваем, чтобы текст был выше изображения */
+}
+
+.product {
+  border-radius: 5px;
+}
+
+/*BLOCK*/
+
+.block {
+  max-width: 500px;
+}
+
+/*INFO*/
+.info {
+  display: flex;
+  height: 500px;
+}
+
+/*FOOTER*/
+
+.footer {
+  padding-bottom: 50px;
+  background-color: #fff;
+  padding: 20px 20px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-copyright-logo {
+  margin-bottom: 24px;
+}
+
+.footer-copyright-desc {
+  max-width: 303px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.footer-copyright-terms {
+  margin-top: auto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.78;
+  color: rgba(9, 9, 9, 0.5);
+}
+
+.footer-nav-wrapper {
+  display: flex;
+}
+
+.footer-nav+.footer-nav {
+  margin-left: 212px;
+}
+
+.footer-nav {
+  max-width: 200px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+
+.footer-nav-title {
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #d31fa9;
+}
+
+.footer-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer-nav li {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.footer-nav li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-nav a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.footer-nav a::after {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+
+.footer-nav a:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.logo_icon {
+  color: #d31fa9;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.footer-copyright-desc {
+  color: #510ba1;
+  font-weight: 900;
+  font-size: 25px;
+  font-style: italic;
 }

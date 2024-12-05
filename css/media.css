@@ -1,0 +1,18 @@
+@media(max-width:700px) {
+  .product+p {
+   font-size: 30px;  
+  }
+}
+
+@media(max-width: 768px) {
+
+  /*FOOTER */
+  .footer-nav-wrapper {
+      flex-direction: column;
+  }
+
+  .footer-nav+.footer-nav {
+      margin-left: 0;
+      margin-top: 60px;
+  }
+}
