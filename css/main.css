@@ -21,6 +21,7 @@ h1 {
  color: #f8065f;
  font-weight: 1000;
  font-style: italic;
+ background-color: #6289c0;
 }
 
 /*HEADER*/
@@ -120,6 +121,7 @@ h1 {
 }
 
 .account {
+  display: none;
   position: relative;
   padding-left: 30px;
   font-size: 18px;
@@ -183,32 +185,38 @@ h1 {
   /* Высота автоматически подстроится под ширину */
 }
 
-.typography {
-  position: absolute;
-  /* Абсолютное позиционирование текста */
-  top: 0%;
-  /* Размещаем текст посередине по вертикали */
-  left: 35%;
-  /* Размещаем текст посередине по горизонтали */
-  /*transform: translate(-50%, -50%); /* Сдвигаем текст так, чтобы он оказался точно по центру */
-  color: rgb(80, 56, 191);
-  /* Цвет текста, можно изменить по необходимости */
-  font-size: 20px;
-  /* Размер шрифта, также можно настроить по желанию */
-  margin: 0;
-  /* Убираем стандартные отступы у параграфа */
-  z-index: 1;
-  /* Обеспечиваем, чтобы текст был выше изображения */
-}
+/*product-card*/
 
 .product {
   border-radius: 5px;
 }
 
-/*BLOCK*/
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  display: inline-block;
+}
 
-.block {
-  max-width: 500px;
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  margin: 0 0 10px 0;
+}
+
+#products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*INFO*/
@@ -221,7 +229,7 @@ h1 {
 
 .footer {
   padding-bottom: 50px;
-  background-color: #fff;
+  background-color: #d9f8fc;
   padding: 20px 20px;
 }
 
@@ -239,14 +247,6 @@ h1 {
   margin-bottom: 24px;
 }
 
-.footer-copyright-desc {
-  max-width: 303px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.78;
-}
-
 .footer-copyright-terms {
   margin-top: auto;
   font-weight: 500;
@@ -259,42 +259,12 @@ h1 {
   display: flex;
 }
 
-.footer-nav+.footer-nav {
-  margin-left: 212px;
-}
-
 .footer-nav {
-  max-width: 200px;
+  max-width: 250px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.78;
-}
-
-
-.footer-nav-title {
-  margin-bottom: 24px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.33;
-  color: #d31fa9;
-}
-
-.footer-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.footer-nav li {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 11px;
-}
-
-.footer-nav li:last-child {
-  margin-bottom: 0;
 }
 
 .footer-nav a {
@@ -312,7 +282,7 @@ h1 {
   content: '';
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #f5410a;
   opacity: 0;
   transition: all 0.2s ease-in;
 }
@@ -322,15 +292,44 @@ h1 {
   opacity: 1;
 }
 
+.footer-copyright-desc {
+  color: #510ba1;
+  font-weight: 900;
+  font-size: 25px;
+  font-style: italic;
+}
+
 .logo_icon {
   color: #d31fa9;
   font-weight: 900;
   font-size: 25px;
 }
 
-.footer-copyright-desc {
-  color: #510ba1;
-  font-weight: 900;
-  font-size: 25px;
-  font-style: italic;
+.icon {
+  position: relative;
+}
+
+.icon::before {
+  content: url(/image/icons/goldFishico.jpg);
+  ;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-cell {
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.icon-cell img {
+  max-width: 100%;
+  height: auto;
 }

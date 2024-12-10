@@ -9,7 +9,26 @@ h1 {
   color: #f8065f;
   font-weight: 1000;
   font-style: italic;
- }
+  background-color: #6289c0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  background-image: url("./../image/bg/image3.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #000;
+  height: 1000px;
+}
+
+.header {
+  padding-top: 30px;
+  margin-bottom: 0px;
+  background-color: #b8ddfb;
+  padding: 5px 0;
+  border-radius: 20px;
+}
 
 h2 {
   text-align: center;
@@ -18,7 +37,7 @@ h2 {
   font-style: italic;
 }
 
- .product-card {
+.product-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,21 +45,137 @@ h2 {
   background-size: cover;
   background-position: center;
   border-radius: 1rem;
-  box-shadow: 1rem 1rem 2rem #082424;
+  box-shadow: 1rem 1rem 2rem #1d5d5d;
   margin: 1rem;
-
   background-color: rgb(251, 251, 235);
   padding: 1rem;
- 
-  box-shadow: 0.1rem 0.1rem 0.2rem #808080a9;
- }
+  
+}
 
- .logo_icon {
+/*FORM*/
+
+.product input[type="number"],
+.product input[type="text"] {
+    width: 400px; /* Ширина поля ввода */
+    height: 50px; /* Высота поля ввода */
+    margin-bottom: 10px; /* Отступ между полями */
+    padding: 5px; /* Внутренний отступ */
+    box-sizing: border-box; /* Учет рамок и внутренних отступов в размере */
+    border: 1px solid #ccc; /* Тонкая серая рамка */
+}
+
+.product label {
+    display: block; /* Поле метки занимает целую строку */
+    margin-bottom: 5px; /* Отступ между меткой и полем ввода */
+}
+
+
+/*FOOTER*/
+
+.footer {
+  padding-bottom: 50px;
+  background-color: #d9f8fc;
+  padding: 20px 20px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-copyright-logo {
+  margin-bottom: 24px;
+}
+
+.footer-copyright-terms {
+  margin-top: auto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.78;
+  color: rgba(9, 9, 9, 0.5);
+}
+
+.footer-nav-wrapper {
+  display: flex;
+}
+
+.footer-nav {
+  max-width: 250px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.footer-nav a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.footer-nav a::after {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #f5410a;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+
+.footer-nav a:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.footer-copyright-desc {
+  color: #510ba1;
+  font-weight: 900;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.logo_icon {
   color: #d31fa9;
   font-weight: 900;
   font-size: 25px;
-  border-radius: 1rem;
-  box-shadow: 1rem 1rem 2rem #082424;
-  margin: 1rem;
-
 }
+
+.icon {
+  position: relative;
+}
+
+.icon::before {
+  content: url(/image/icons/goldFishico.jpg);
+  ;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-cell {
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.icon-cell img {
+  max-width: 100%;
+  height: auto;
+}
+

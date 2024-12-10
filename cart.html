@@ -1,38 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/css/cart.css">
 </head>
+
 <body>
   <h1>
     Интернет - магазин подарков "Золотая рыбка"
-</h1>
-<h2>
-Поиск товара
-</h2>
+  </h1>
+  <h2>
+    Поиск товара
+  </h2>
   <form class="product-card">
-    <label for="product-id">Идентификатор товара:</label><br>
-    <input type="number" id="product-id" required><br>
     <label for="title">Название товара:</label><br>
-    <input type="text" id="title" required><br>
+    <input type="text" class="product title" required><br>
+    <label for="product-id">Идентификатор товара:</label><br>
+    <input type="number" class="product id" required><br>
     <label for="price">Стоимость товара:</label><br>
-    <input type="number" id="price" required><br>
+    <input type="number" class="product price" required><br>
     <label for="category">Категория товара:</label><br>
-    <input type="text" id="category" required><br>
+    <input type="text" class="product category" required><br>
     <label for="discription">Описание товара:</label><br>
-    <input type="text" id="discription" required><br>
+    <input type="text" class="product discription" required><br>
     <label for="image">Фото товара:</label><br>
-    <input type="image" id="image" required><br>
+    <input type="image" class="product image" required><br>
   </form>
-  
-  <div class="logo_icon">На главную страницу
-    <a href="/index.html" class="icon">
-      <img class="logoImage" src="/image/icons/goldFishico.jpg" alt="Логотип магазина Золотая рыбка">
-    </a>
 
-  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-copyright">
+          <div class="footer-copyright-logo">
+
+            <div class="logo_icon">
+              <a href=".././index.html" class="icon" alt="Логотип магазина Золотая рыбка">На главную страницу
+              </a>
+            </div>
+
+          </div>
+          <p class="footer-copyright-terms">Copyright 2024 Золотая рыбка, Alex Kislyuk</p>
+        </div>
+        <div class="footer-nav-wrapper">
+          <div class="footer-nav">
+
+              <div class="icon-cell">
+                <a href="#">
+                  <img src="/image/icons/letter.png" alt="наши адреса">
+                </a>
+              </div>
+              <div class="icon-cell">
+                <a href="#">
+                  <img src="/image/icons/email.png" alt="электронная почта">
+                </a>
+              </div>
+              <div class="icon-cell">
+                <a href="#">
+                  <img src="/image/icons/phone.png" alt="наши телефоны">
+                </a>
+                
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
+
 </html>
