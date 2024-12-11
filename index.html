@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex89 URBAN section-10-asynchrony></title>
-  <link rel="stylesheet" href="/css/main.css">
+  <title>Alex89 URBAN section-10-asynchrony</title>
+  <link rel="stylesheet" href="/css/styles.css" href="/css/media.css" href="/css/card.css">
+  
 </head>
 
 <body>
@@ -17,20 +18,19 @@
     <h1>
       Интернет - магазин подарков "Золотая рыбка"
     </h1>
+
     <nav class="nav-wrapper">
       <div class="container-wide">
         <div class="row space-between align-center">
-
           <div class="shop_logo">
             <a href="#" class="logo">
               <img class="logoImage" src="/image/icons/goldFish.png" alt="Логотип магазина Золотая рыбка">
             </a>
           </div>
-
           <div class="nav">
             <ul>
               <li><a href="#">Каталог</a></li>
-              <li><a href="/cart.html">Поиск товара</a></li>
+              <li><a href="/card.html">Поиск товара</a></li>
               <li><a href="#">Сделать заказ</a></li>
               <li><a href="#">Личный кабинет</a></li>
             </ul>
@@ -39,23 +39,42 @@
             <a href="#" class="account">Контакты
             </a>
           </div>
+
         </div>
       </div>
     </nav>
+
+    <form class="productsForm">
+      <label for="title">Название:</label><br>
+      <input type="text" class="title" required><br>
+      <label for="price">Цена:</label><br>
+      <input type="number" class="price" min="0" max="10000000" required><br>
+      <label for="category">Категория:</label><br>
+      <select class="category">
+        <option value="electronics">Электроника</option>
+        <option value="jewelry">Ювелирные изделия</option>
+        <option value="men’s clothing">Мужская одежда</option>
+        <option value="women’s clothing">Женская одежда</option>
+      </select>
+      <label for="status">Описание:</label><br>
+      <textarea class="description" required></textarea><br>
+      <br>
+      <button class="button_save" type="submit" onclick="addProduct()">Добавить товар</button>
+    </form>
   </header>
 
   <main>
     <section class="categories-menu">
       <div class="list">
         <a href="#" class="product">
-          <p class="typography">Парфюмерия</p>
-          <img class="image" src="/image/pictures/parfum.jpg" alt="Парфюмерия">
+          <p class="typography">Бытовая техника</p>
+          <img class="image" src="/image/pictures/appliances.jpg" alt="Бытовая техника">
         </a>
       </div>
       <div class="list">
         <a href="#" class="product">
-          <p class="typography">Бижутерия</p>
-          <img class="image" src="/image/pictures/jewelry.jpg" alt="Бижутерия">
+          <p class="typography">Ювелирные изделия</p>
+          <img class="image" src="/image/pictures/jewelry.jpg" alt="Ювелирные изделия">
         </a>
       </div>
       <div class="list">
@@ -70,17 +89,13 @@
           <img class="image" src="/image/pictures/women clothing.jpg" alt="Женская одежда">
         </a>
       </div>
-
-      <div id="products-container">
-
-        <!--Здесь будут карточки товаров-->
-
-      </div>
-
     </section>
+
+    <div class="products-container">
+      <!--Здесь будут карточки товаров-->
+    </div>
+
   </main>
-  <div class="info">
-  </div>
 
   <footer class="footer">
     <div class="container">
@@ -100,17 +115,17 @@
           <div class="footer-nav">
 
             <div class="icon-cell">
-              <a href="#">
+              <a href="third_page.html">
                 <img src="/image/icons/letter.png" alt="наши адреса">
               </a>
             </div>
             <div class="icon-cell">
-              <a href="#">
+              <a href="third_page.html">
                 <img src="/image/icons/email.png" alt="электронная почта">
               </a>
             </div>
             <div class="icon-cell">
-              <a href="#">
+              <a href="third_page.html">
                 <img src="/image/icons/phone.png" alt="наши телефоны">
               </a>
 
@@ -120,7 +135,7 @@
         </div>
       </div>
   </footer>
-
+  <script src="script.js"></script>
 </body>
 
 </html>
